@@ -1,0 +1,36 @@
+div.form-wrapper{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    align-self: center;
+    justify-self: center;
+    border: 0.1rem solid black;
+    height: 70%;
+    width: 30%;
+}
+div.form-header{
+    display: grid;
+    background-color: yellow;
+    text-align: center;
+}
+div.form-header>p{
+    align-self: center;
+}
+
+form{
+
+    align-self: center;
+    justify-self: center;
+}
+form>label{
+    display: block;
+    margin: 1rem 0;
+}
+.buttonSubm{
+    text-align: center;
+}
+div.buttonSubm>input{
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+    padding: 0.5rem 0;
+}

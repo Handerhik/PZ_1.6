@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: grid;
+    grid-template-rows: 7% 82% 11% ;
+    height: 100%;
+    width: 100%;
+}
+/* ШАПКА */
+header{
+    border-bottom: 0.1rem solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*height: 60px;*/
+    background-color: yellow;
+}
+header>div>h4{
+    margin-left: 10px;
+}
+.name{
+    text-align: center;
+    padding-left: 20px;
+}
+.login{
+    padding-top: 20px;
+    padding-right: 15px;
+}
+.log{
+    text-decoration: none;
+}
+.sign{
+    text-decoration: none;
+}
+.second{
+    color: cornflowerblue;
+}
+
+main{
+    display: grid;
+}
+
+/* Футер */
+footer{
+    padding-top: 20px;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    width: 100%;
+    /*height: 70px;*/
+    background-color: grey;
+    text-align: center;
+}
