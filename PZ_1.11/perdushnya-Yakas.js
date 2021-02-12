@@ -20,5 +20,11 @@ function task3(n) {
             console.log('fizzbuzz' + i)
         }
     }
-}
-console.log(task3(20))
+    return  n + ' This is the end'
+}console.log(task3(20))
+
+//      Task 4
+function calculate(a, b, c) {
+    return (a + b + c) / 3
+}console.log(calculate(4,6,8))
+
