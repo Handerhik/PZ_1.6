@@ -74,3 +74,41 @@ function isDivisible(n, x, y) {
 //     arr.forEach((v) =>console.log(v))
 // }
 // Fun7()
+
+//       TASK 8
+// let a = +prompt('Enter a to calculate', '')
+// let b = +prompt('Enter b to calculate', '')
+// let chose = +prompt('If you wanna Add enter 1, to Sub enter 2, to Mul enter 3, to Div enter 4', '')
+// switch (chose){
+//     case 1:
+//         document.write(Add(a, b))
+//         break
+//     case 2:
+//         document.write(Sub(a, b))
+//         break
+//     case 3:
+//         document.write(Mul(a, b))
+//         break
+//     case 4:
+//         document.write(Div(a, b))
+//         break
+//     default:
+// }
+// function Add(a, b){
+//     return 'result of Add = ' + (a + b)
+// }
+// Add()
+// function Sub(a, b) {
+//     return 'result of Sub = ' + (a - b)
+// }
+//
+// function Mul(a, b) {
+//     return 'result of Mul = ' + (a * b)
+// }
+//
+// function Div(a, b) {
+//     if (b == 0){
+//         document.write(' b can not be equal 0')
+//     }
+//     else return 'result of Div = ' + (a / b)
+// }
