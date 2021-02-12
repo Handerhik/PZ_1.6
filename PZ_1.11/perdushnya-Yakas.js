@@ -52,3 +52,25 @@ function isDivisible(n, x, y) {
 //     console.log(`average of all elements = ${sum / n}`)
 // }
 // console.log(Fun6(5))
+
+//      Task 7
+// function Fun7(){
+//     let arr = [5]
+//     for (let i = 0; i < 5; i++) {
+//         arr[i] = [5]
+//         for (let j = 0; j < 5; j++) {
+//             if (Math.random() < 0.5){
+//                 arr[i][j] = 2
+//             }
+//             else arr [i][j] = -2
+//         }
+//     }
+//     for (let i = 0; i < 5; i++) {
+//         if (arr[i][i] < 0){
+//             arr[i][i] = 0
+//         }
+//         else arr [i][i] = 1
+//     }
+//     arr.forEach((v) =>console.log(v))
+// }
+// Fun7()
