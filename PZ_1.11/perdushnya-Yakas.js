@@ -112,3 +112,25 @@ function isDivisible(n, x, y) {
 //     }
 //     else return 'result of Div = ' + (a / b)
 // }
+
+//          TASK 9
+// function Fun9(a) {
+//     if (a > 0 ){
+//         console.log('is positive')
+//     }
+//     else if (a < 0){
+//         console.log('is negative')
+//     }
+//
+//     if (a > 0){
+//         console.log('your number is simple')
+//     }
+//     else console.log('your number is not simple')
+//
+//
+//     if (a % 2 === 0 || a % 5 === 0 || a % 3 === 0 || a % 6 === 0 || a % 9 === 0){
+//         console.log(`Number ${a} is possible to Div on 2, 5, 3, 6, 9 without remainder`)
+//     }
+//     else return `Will mistake in Div`
+// }
+// console.log(Fun9(7))
