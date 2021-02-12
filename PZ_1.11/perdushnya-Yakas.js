@@ -36,3 +36,19 @@ function isDivisible(n, x, y) {
     // return (n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0) ? true : false;
     // return n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0;
 }console.log(isDivisible(4, 7, 9))
+
+//      Task 6
+// function Fun6(n) {
+//     let arr = new Array(n)
+//     for (let i = 0; i < n; i++) {
+//         arr[i] = i
+//     }
+//
+//     console.log(`Max = ${Math.max(...arr)}`)
+//     console.log(`Min = ${Math.min(...arr)}`)
+//     arr.filter((value) => value % 2).forEach((x) => console.log(x))
+//     let sum = arr.reduce((main, value) => main += value)
+//     console.log(`Sum of all elements = ${sum}`)
+//     console.log(`average of all elements = ${sum / n}`)
+// }
+// console.log(Fun6(5))
