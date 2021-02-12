@@ -28,3 +28,11 @@ function calculate(a, b, c) {
     return (a + b + c) / 3
 }console.log(calculate(4,6,8))
 
+//      Task 5
+function isDivisible(n, x, y) {
+    // if (n % x === 0 && n % y === 0 && n > 0 && x > 0 && y > 0)
+    //     return true
+    // else return false
+    // return (n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0) ? true : false;
+    // return n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0;
+}console.log(isDivisible(4, 7, 9))
