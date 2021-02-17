@@ -134,3 +134,17 @@
 //     else return `Will mistake in Div`
 // }
 // console.log(Fun9(7))
+
+// Task 10
+let array = [7, 3, 5, 6, "perdushnya"];
+
+function arrayTrick(array) {
+    array.reverse();
+    for (let i = 0; i < array.length; i++) {
+        if (!isNaN(Number.parseInt(array[i]))) {
+            array[i] *= array[i];
+        }
+    }
+    return array;
+};
+console.log(arrayTrick(array));
