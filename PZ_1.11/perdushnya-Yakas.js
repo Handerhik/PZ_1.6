@@ -29,13 +29,30 @@
 // }console.log(calculate(4,6,8))
 
 //      Task 5
-// function isDivisible(n, x, y) {
-//     if (n % x === 0 && n % y === 0 && n > 0 && x > 0 && y > 0)
-//         return true
-//     else return false
-//     return (n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0) ? true : false;
-//     return n !== 0 && n > 0 && x !==0 && x > 0 && y !==0 && y > 0 && n % x === 0 && n % y === 0;
-// }console.log(isDivisible(4, 7, 9))
+// function isDivisible(n,x,y){
+//     let end;
+//     if(n % x === 0 && n % y === 0){
+//         end ="Success";
+//     }
+//     else{
+//         end ="Ooopss, there are error";
+//     }
+//     return end;
+// }
+// console.log(isDivisible(12,5,4));
+// //part2
+// const isd = (n, x, y) =>{
+//     const s =(n % x === 0) && (n % y === 0);
+//     return s;
+// };
+// console.log(isd(12,3,4))
+// //part3
+//
+// function isD(n,x,y){
+//     let res =(n % x === 0 && n % y === 0) ? 'Success' : 'Error';
+//     return res;
+// }
+// console.log(isD(13,3,4));
 
 //      Task 6
 // function Fun6(n) {
@@ -136,15 +153,15 @@
 // console.log(Fun9(7))
 
 // Task 10
-let array = [7, 3, 5, 6, "perdushnya"];
-
-function arrayTrick(array) {
-    array.reverse();
-    for (let i = 0; i < array.length; i++) {
-        if (!isNaN(Number.parseInt(array[i]))) {
-            array[i] *= array[i];
-        }
-    }
-    return array;
-};
-console.log(arrayTrick(array));
+// let array = [7, 3, 5, 6, "perdushnya"];
+//
+// function arrayTrick(array) {
+//     array.reverse();
+//     for (let i = 0; i < array.length; i++) {
+//         if (!isNaN(Number.parseInt(array[i]))) {
+//             array[i] *= array[i];
+//         }
+//     }
+//     return array;
+// };
+// console.log(arrayTrick(array));
