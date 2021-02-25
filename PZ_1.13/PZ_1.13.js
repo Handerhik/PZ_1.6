@@ -153,3 +153,21 @@
 // }
 // let  a = {name: 'John', surname: 'Angel', age: 20}
 // console.log(count(a))
+
+//      TASK 8
+// class Task {
+//     constructor(name, description, startDate, endDate) {
+//         this.name = name;
+//         this.description = description;
+//         this.startDate = startDate;
+//         this.endDate = endDate;
+//     }
+//     subtask(){
+//         let today = new Date();
+//         return Math.round(( ( today - Date.parse(this.startDate)) / ( Date.parse(this.endDate) - Date.parse(this.startDate) ) ) * 100) + "%"
+//     }
+// }
+//
+// let t1 = new Task('Выучить вебку', 'Нужно работать!', 'Jan 8, 2021','Aug 30, 2021' )
+// console.log(t1)
+// console.log(t1.subtask())
