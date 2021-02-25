@@ -102,3 +102,21 @@
 //
 // let chess = new Board(8, 8);
 // console.log(chess);gi
+
+//      TASK 3
+// class Random {
+//     static nextDouble(low, high) {
+//         return Math.random() * (high - low) + low;
+//     }
+//     static nextInt(low, high) {
+//         let rand = low + Math.random() * (high + 1 - low);
+//         return Math.floor(rand)
+//     }
+//     static nextElement(array) {
+//         let index = Math.floor(Math.random() * array.length);
+//         return array[index]
+//     }
+// }
+// console.log(Random.nextDouble(2.3, 14.7))
+// console.log(Random.nextInt(2, 10))
+// console.log(Random.nextElement([1, 4, 5, 8, 25]));
