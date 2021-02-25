@@ -146,3 +146,10 @@
 //         .filter((value, index, self) => self.indexOf(value) === index)
 // }
 // console.log(pluck(characters));
+
+//      TASK 7
+// function count(a) {
+//     return Object.keys(a).length
+// }
+// let  a = {name: 'John', surname: 'Angel', age: 20}
+// console.log(count(a))
