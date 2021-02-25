@@ -7,17 +7,17 @@
 //     return side * count
 // }console.log(perimeter(4,3))
 
-//      Task 3
+   //  Task 3
 // function task3(n) {
 //     for (let i = 0; i < n; i++) {
-//         if (i % 3 === 0){
+//         if (i % 3 === 0 && i % 5 === 0){
+//             console.log('fizzbuzz' + i)
+//         }
+//          else if (i % 3 === 0){
 //             console.log('fizz' + i)
 //         }
 //         else if (i % 5 === 0){
 //             console.log('buzz' + i)
-//         }
-//         else if (i % 3 === 0 && i % 5 === 0){
-//             console.log('fizzbuzz' + i)
 //         }
 //     }
 //     return  n + ' This is the end'
