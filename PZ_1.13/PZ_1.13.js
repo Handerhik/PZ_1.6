@@ -134,3 +134,15 @@
 // console.log(generator());
 // console.log(generator2());
 // console.log(generator());
+
+//      TASK 6
+// let characters = [
+//     {name: "Valet", age: 20},
+//     {name: "Perdushnya", age: 24}
+// ];
+//
+// function pluck(array) {
+//     return array.map(item => item.name)
+//         .filter((value, index, self) => self.indexOf(value) === index)
+// }
+// console.log(pluck(characters));
