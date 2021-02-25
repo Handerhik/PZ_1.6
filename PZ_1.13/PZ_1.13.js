@@ -171,3 +171,18 @@
 // let t1 = new Task('Выучить вебку', 'Нужно работать!', 'Jan 8, 2021','Aug 30, 2021' )
 // console.log(t1)
 // console.log(t1.subtask())
+
+//     TASK 9
+// class Worker {
+//     constructor(name, surname, rate, days) {
+//         this.name = name
+//         this.surname = surname;
+//         this.rate = rate
+//         this.days = days
+//     }
+//     getSalary(){
+//         return this.rate * this.days
+//     }
+// }
+// let worker = new Worker('Vladislav', 'Borshch', 1000, 30)
+// console.log(worker.getSalary())
