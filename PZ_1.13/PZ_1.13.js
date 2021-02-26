@@ -121,6 +121,15 @@
 // console.log(Random.nextInt(2, 10))
 // console.log(Random.nextElement([1, 4, 5, 8, 25]));
 
+//      TASK 4
+// function createGreetable (str) {
+//     const result = function(){};
+//     result.prototype.name = str;
+//     result.prototype.greet = function (greeting) {return `${greeting}, ${result.prototype.name}!`};
+//     return result;
+// }
+// const g = createGreetable('VladislavcheG');
+// console.log(g.prototype.greet('Salam'));
 //      TASK 5
 //
 // function sequence(start, step) {
