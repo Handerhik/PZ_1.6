@@ -81,26 +81,26 @@
 // function Board(length, width) {
 //     this.length = length;
 //     this.width = width;
-//     let string = '';
-//     let str = '';
+//     let rows = '';
+//     let columns = '';
 //     for (;length > 0; length--){
-//         string += '\n'
-//         string += length;
+//         rows += '\n'
+//         rows += length;
 //         for (let y = 1; y < width + 1; y++){
 //             if ( y % 2 !== 0){
-//                 string += " #"
-//             } else string += " @"
+//                 rows += " #"
+//             } else rows += " @"
 //         }
 //     }
-//     console.log(string)
+//     console.log(rows)
 //     for (let i = 0; i < width; i++) {
-//         str += String.fromCodePoint(65 + i) + ' ';
+//         columns += String.fromCodePoint(65 + i) + ' ';
 //     }
-//     console.log('  ' + str);
+//     console.log('  ' + columns);
 // }
 //
 // let chess = new Board(8, 8);
-// console.log(chess);gi
+// console.log(chess);
 
 //      TASK 3
 // class Random {
