@@ -64,3 +64,10 @@
 //     return re.test(String(email).toLowerCase())
 // }
 // console.log(isValidEmail('mrJohn@gmail.com'))
+
+//      TASK 6
+// function repeatedWords(str) {
+//     let newString = str.match(/the/gi)
+//     return newString + '\n' + 'Количество повторений = ' + newString.length
+// }
+// console.log(repeatedWords('London is the capital of GB. Kiev is The capital of Ukraine '))
