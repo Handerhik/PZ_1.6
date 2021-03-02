@@ -38,3 +38,22 @@
 //     })
 // }
 // console.log(returnArr([1,2,2,4,5,6,6]))
+
+//      TASK 4
+// function splitText(str) {
+//     let vowelsLetters = ['а', 'у', 'е', 'о', 'э', 'и', 'ы', 'я', 'ю']
+//     let result = {
+//         text: str,
+//         vowelsLetters: 0,
+//         consonantsLetters: 0
+//     }
+//     str.split(' ').forEach(x => {
+//         if (vowelsLetters.includes(x.split('')[0])){
+//             return result.vowelsLetters++
+//         }else {
+//             return result.consonantsLetters++
+//         }
+//     })
+//     return result
+// }
+// console.log(splitText('я люблю учить вебку, и стану тем самым, всемирно известным разрабом'))
