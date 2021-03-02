@@ -18,3 +18,8 @@
 // }
 // console.log(numberToObj(6754))
 
+//      TASK 2
+// function getExt(str) {
+//     return str.split('.').reverse()[0]
+// }
+// console.log('Расширение файла : ' + getExt('/home/Vladislav/WebstormProjects/PZ1.15/script.js'))
