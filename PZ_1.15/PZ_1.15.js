@@ -71,3 +71,77 @@
 //     return newString + '\n' + 'Количество повторений = ' + newString.length
 // }
 // console.log(repeatedWords('London is the capital of GB. Kiev is The capital of Ukraine '))
+
+//      TASK 7
+// function getFullDate() {
+//     let hours = new Date().getHours() + ':'
+//     let minutes = new Date().getMinutes() + ':'
+//     let seconds = new Date().getSeconds() + ', '
+//     let day = new Date().getDay()
+//     switch (day){
+//         case 0:
+//             day = 'воскресенье' + ', '
+//             break
+//         case 1:
+//             day = 'понедельник' + ', '
+//             break
+//         case 2:
+//             day = 'вторник' + ', '
+//             break
+//         case 3:
+//             day = 'среда' + ', '
+//             break
+//         case 4:
+//             day = 'четверг' + ', '
+//             break
+//         case 5:
+//             day = 'пятница' + ', '
+//             break
+//         case 6:
+//             day = 'суббота' + ', '
+//             break
+//     }
+//     let date = new Date().getDate() + ' '
+//     let month = new Date().getMonth()
+//     switch (month){
+//         case 0:
+//             month = 'Января' + ' '
+//             break
+//         case 1:
+//             month = 'Февраля' + ' '
+//             break
+//         case 2:
+//             month = 'Марта' + ' '
+//             break
+//         case 3:
+//             month = 'Апреля' + ' '
+//             break
+//         case 4:
+//             month = 'Мая' + ' '
+//             break
+//         case 5:
+//             month = 'Июня' + ' '
+//             break
+//         case 6:
+//             month = 'Июля' + ' '
+//             break
+//         case 7:
+//             month = 'Августа' + ' '
+//             break
+//         case 8:
+//             month = 'Сентября' + ' '
+//             break
+//         case 9:
+//             month = 'Октября' + ' '
+//             break
+//         case 10:
+//             month = 'Ноября' + ' '
+//             break
+//         case 11:
+//             month = 'Декабря' + ' '
+//             break
+//     }
+//     let year = new Date().getFullYear() + ' года'
+//     return hours + minutes + seconds + day + date + month  + year
+// }
+// console.log(getFullDate())
