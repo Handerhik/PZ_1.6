@@ -23,3 +23,18 @@
 //     return str.split('.').reverse()[0]
 // }
 // console.log('Расширение файла : ' + getExt('/home/Vladislav/WebstormProjects/PZ1.15/script.js'))
+
+//      TASK 3
+// function returnArr(arr) {
+//     let mass = []
+//     return arr.filter(x => {
+//         if (mass.includes(x)){
+//             return false
+//         }
+//         else{
+//             mass.push(x)
+//             return true
+//         }
+//     })
+// }
+// console.log(returnArr([1,2,2,4,5,6,6]))
