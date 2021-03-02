@@ -145,3 +145,32 @@
 //     return hours + minutes + seconds + day + date + month  + year
 // }
 // console.log(getFullDate())
+
+//      TASK 8
+// function game() {
+//     alert('Game started')
+//     let answer = true
+//     let date = new Date()
+//     while (answer){
+//         let hint = ''
+//         let attempts = 0
+//         let attempt = 0
+//         let result = Math.floor(Math.random() * 100)
+//         let win = false
+//         while (win = (result !== (attempt = +prompt('Угадывай число ' + hint + ':)')))){
+//             if (attempt+15 <= result || attempt-15 >= result){
+//                 hint = 'Очень холодно'
+//             }else if (attempt+10 <= result || attempt-10 >= result){
+//                 hint = 'Холодно'
+//             }else if (attempt+5 <= result || attempt-5 >= result){
+//                 hint = 'Жарко'
+//             }else hint = 'Очень жарко'
+//             attempts++
+//             console.log(`${date.toLocaleDateString()} ${date.toLocaleTimeString()}
+//             Попытка ${attempts}: число ${attempt} - не верно`)
+//         }
+//         console.log(`${date.toLocaleDateString()} ${date.toLocaleTimeString()}
+//                 Спроба ${attempts}: число ${attempt} – вірно`)
+//         answer = confirm(`Вам удалось угадать число ${result} за ${attempts} попыток! \n Желаете сыграть еще раз?`)
+//     }
+// }game()
