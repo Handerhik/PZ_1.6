@@ -9,7 +9,9 @@
   "author": "Vladislav Zborshchenko (Full-Stack MNS Group)",
   "license": "ISC",
   "dependencies": {
+    "audic": "^2.0.0",
     "colors": "^1.4.0",
+    "play-sound": "^1.1.3",
     "say": "^0.16.0",
     "sound-play": "^1.1.0"
   }
