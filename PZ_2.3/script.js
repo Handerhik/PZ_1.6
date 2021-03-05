@@ -21,3 +21,23 @@
 //     console.log('Unixxxx')
 // }
 // else console.log('error')
+
+//      TASK 4
+function coinGame() {
+    const readline = require('readline')
+    const colors = require('colors')
+    let result = Math.round(Math.random())
+    const read = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    })
+    read.question(colors.random('\tОрел или решка?\n Введи 0 если ОРЕЛ, введи 1 если РЕШКА: '), answer => {
+        if (result === Number.parseInt(answer)){
+            console.log(colors.random('\tТы победил'))
+        }else {
+            console.log(colors.random('\tУвы, ты проиграл'))
+        }
+        read.close()
+    })
+}
+coinGame()
