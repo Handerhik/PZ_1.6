@@ -5,7 +5,10 @@
   "main": "script.js",
   "dependencies": {
     "colors": "^1.4.0",
-    "path": "^0.12.7"
+    "events": "^3.3.0",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {},
   "scripts": {
