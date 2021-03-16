@@ -12,56 +12,52 @@ const rl = readline.createInterface({
 start()
 
 emitter.on('first', function (){
-    console.log('This is 1 part')
-
-    let directory_name = prompt('Enter name of directory which you want to see content ', '')
+    let directory_name = prompt('Введи имя каталога, содержимое которого ты хочешь увидеть: ', '')
     let filenames = fs.readdirSync(directory_name)
     filenames.forEach((file) => {
-        console.log('File: ' + file)
+        console.log('Имя файла: ' + file)
     })
     start()
 })
 
 emitter.on('second', function (){
-    console.log('This is 2 part')
-    const pathToNewDir = prompt('Paste here new path to dir ', '')
+    const pathToNewDir = prompt('Вставь сюда путь директории куда ты хочешь переместиться ', '')
     __dirname = path.normalize(pathToNewDir)
-    console.log('Success')
+    console.log('Переход в другой каталог успешно осуществлен!')
     start()
 })
 
 emitter.on('third', function (){
-    const choiceToCreate = +prompt('If you wanna create FILE enter 1, to create DIR enter 2 ')
+    const choiceToCreate = +prompt('Если ты хочешь создать ФАЙЛ - нажми 1, для создания КАТАЛОГА - нажми 2: ')
     if (choiceToCreate === 1){
-        const newFileToCreate = prompt('Enter name of new file ')
-        const contentOfNewFile = prompt('Write content for new file there ')
+        const newFileToCreate = prompt('Введи имя нового файла: ')
+        const contentOfNewFile = prompt('Введи содержимое для нового файла: ')
         fs.appendFile(newFileToCreate, contentOfNewFile, function (err){
             if (err) throw err
             else {
-                console.log('File is created!')
+                console.log('Файл успешно создан!')
             }
             start()
         })
     }
     else if (choiceToCreate === 2){
-        const dir = prompt('Enter name of new DIR ')
+        const dir = prompt('Введи имя нового каталога: ')
         fs.mkdir(dir, (err => {
             if (err){
                 throw err
             }
             else{
-                console.log('Directory is created')
+                console.log('Каталог успешно создан!')
             }
             start()
         }))
     }
-    else console.log('Error! You should enter ONLY 1 or 2!')
+    else console.log('Ошибка! Ты должен ввести только 1 или 2!')
     start()
 })
 
 emitter.on('fourth', function (){
-    console.log('This is 4 part')
-    console.log('Enter the file name which you wanna read')
+    console.log('Введи имя файла содержимое которого ты хочешь увидеть: ')
     const fileName = prompt('')
     fs.readFile(fileName, (err, data) =>{
         if (err) throw err
@@ -71,16 +67,16 @@ emitter.on('fourth', function (){
 })
 
 emitter.on('fifth', function (){
-    const fileName = prompt('Type the name of file to modify ', '')
-    const info = prompt('Type the info to write ', '')
-    const operation = +prompt('Append or rewrite? (Type 1 to append or 2 to rewrite )', '')
+    const fileName = prompt('Введи имя файла для модификации ', '')
+    const info = prompt('Введи содержимое которое ты хочешь дополнить/перезаписать в файл ', '')
+    const operation = +prompt('Дополнить или перезаписать? (Введи 1 чтобы дополнить или 2 чтобы перезаписать )', '')
     if (operation === 1){
         fs.appendFile(__dirname + '/' + fileName, info, function (err){
             if (err){
                 console.log('\n\nSomething wrong\n\n')
                 start()
             }
-            console.log('File successfully modified')
+            console.log('Файл успешно изменен!')
             start()
         })
     }
@@ -90,66 +86,66 @@ emitter.on('fifth', function (){
                 console.log('\n\nSomething wrong\n\n')
                 start()
             }
-            console.log('Successfully rewrite')
+            console.log('Файл успешно изменен')
             start()
         })
     }
 })
 
 emitter.on('sixth', function (){
-    const choice = +prompt('If you wanna rename file name, click 1, for DIR name click 2 ')
+    const choice = +prompt('Если хочешь переименовать ФАЙЛ нажми 1, КАТАЛОГ - 2: ')
     if (choice === 1){
-        const fileName = prompt(`Enter file name which you wanna to rename - ` )
+        const fileName = prompt(`Введи имя файла который хочешь переименовать: ` )
         const pathToFile = path.join(__dirname, fileName)
-        const newFileName = prompt('Enter new name of file - ')
+        const newFileName = prompt('Введи новое имя файла ')
         const newPathToFile = path.join(__dirname, newFileName )
 
         fs.rename(pathToFile, newPathToFile, function (err){
             if (err) throw err
-            console.log('Successfully renamed the file!')
+            console.log('Файл успешно переименован!')
         })
         start()
     }
     else if (choice === 2){
-        const currPath = prompt('Enter name of dir which you wanna rename in format ./dir_name - ')
-        const newPath = prompt('Enter new name of dir in format ./new_dirname - ')
+        const currPath = prompt('Введи имя каталога который хочешь переименовать в формате ./dir_name - ')
+        const newPath = prompt('Введи имя каталога который переименовать в формате ./new_dirname - ')
 
         fs.rename(currPath, newPath, function (err){
             if (err) throw err
-            console.log('Successfully renamed the directory!')
+            console.log('Каталог успешно переименован!')
         })
         start()
     }
-    else console.log('error')
+    else console.log('Ошибка! Нужно выбрать только 1 или 2!')
     start()
 })
 
 emitter.on('seventh', function (){
-    const choiceForTask = +prompt('If you wanna delete FILE enter 1, for delete DIR enter 2: ')
+    const choiceForTask = +prompt('Если хочешь удалить ФАЙЛ нажми 1, КАТАЛОГ - 2: ')
     if (choiceForTask === 1){
-        const nameOfFileForDelete = prompt('Enter file name which you want to delete: ')
+        const nameOfFileForDelete = prompt('Введи имя файла который хочешь удалить: ')
         fs.unlink(nameOfFileForDelete, (err => {
             if (err) throw err
             else{
-                console.log('File is deleted')
+                console.log('Файл успешно удален!')
             }
             start()
         }))
     }
     else if (choiceForTask === 2){
-        const nameOfDirForDelete = prompt('Enter dir name which you want to delete: ')
+        const nameOfDirForDelete = prompt('Введи имя каталога который хочешь удалить: ')
         fs.rmdir(nameOfDirForDelete, {recursive: true}, (err => {
             if (err) throw err
-            console.log(`${nameOfDirForDelete} is deleted!`)
+            console.log(`${nameOfDirForDelete} успешно удален!`)
             start()
         }))
     }
-    else console.log('Mistake. Enter only 1 or 2')
+    else console.log('Ошибка! Нужно выбрать только 1 или 2')
     start()
 })
 
 emitter.on('eight', function (){
-    const nameToInfo = prompt('Enter name FILE or DIR in format "./" for info about... ')
+    const nameToInfo = prompt('Введи имя ФАЙЛА или КАТАЛОГА в формате "./" чтобы увидеть информацию о нём: ')
     fs.stat(nameToInfo, (err, stat) =>{
         if (err) throw err
         console.log(stat)
@@ -158,10 +154,9 @@ emitter.on('eight', function (){
 })
 
 emitter.on('exit', function (){
-    console.log('Good luck')
+    console.log('Удачи!')
     rl.close()
 })
-
 
 function start() {
     rl.question('   1 (list) - просмотр содержимого каталога\n' +
@@ -203,7 +198,7 @@ function start() {
                 emitter.emit('exit')
                 break
             default:
-                console.log('Invalid input')
+                console.log('Неправильный ввод! Читай вниательно!')
         }
     }))
 }
