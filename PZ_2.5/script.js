@@ -1,4 +1,5 @@
 const process = require('process')
+const color = require('colors')
 const prompt = require('prompt-sync')()
 const fs = require('fs')
 const path = require('path')
@@ -12,10 +13,21 @@ const rl = readline.createInterface({
 start()
 
 emitter.on('first', function (){
-    let directory_name = prompt('Введи имя каталога, содержимое которого ты хочешь увидеть: ', '')
-    let filenames = fs.readdirSync(directory_name)
-    filenames.forEach((file) => {
-        console.log('Имя файла: ' + file)
+    fs.readdir(__dirname, function (err, elements){
+        for (let i = 0; i < elements.length; i++) {
+            fs.stat(__dirname + '/' + elements[i], (err, stats) =>{
+                if (err){
+                    console.log('Error')
+                    start()
+                }
+                if (stats.isFile()){
+                    console.log(elements[i].green.toString())
+                }
+                else if (stats.isDirectory()){
+                    console.log(elements[i].blue.toString())
+                }
+            })
+        }
     })
     start()
 })
@@ -168,7 +180,7 @@ function start() {
         '   7 (delete) - удаление файла/каталога\n' +
         '   8 (aboutFile) - просмотреть информацию о файле и каталоге (размер, владелец, права доступа)\n' +
         '   0 (Exit) - выход с программы\n' +
-        '   You are on ' + __dirname + '\n', (answer => {
+        '   You are on ' + __dirname.blue + '\n', (answer => {
         switch (answer){
             case '1':
                 emitter.emit('first')
